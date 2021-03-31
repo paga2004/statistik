@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+    <script src="main.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Statistik</title>
+  </head>
+  <body>
+    <div class="header">
+      <div>
+        <input id="input" onchange="update()" />
+        <input
+          type="checkbox"
+          id="summationSymbol"
+          onchange="update()"
+          checked
+        />
+        <label for="summationSymbol">Summenzeichen</label>
+      </div>
+    </div>
+
+    <div class="item">
+      <label>Arithmetischer Mittelwert:</label>
+      <p id="arithmetisch"></p>
+    </div>
+
+    <div class="item">
+      <label
+        >Modalwert<a href="#1"><sup>1</sup></a
+        >:
+      </label>
+      <p id="modalwert"></p>
+    </div>
+
+    <div class="item">
+      <label
+        >Median<a href="#2"><sup>2</sup></a
+        >:
+      </label>
+      <p id="median"></p>
+    </div>
+
+    <div class="item">
+      <label>Maximum: </label>
+      <p id="max"></p>
+    </div>
+
+    <div class="item">
+      <label>Minimum: </label>
+      <p id="min"></p>
+    </div>
+
+    <div class="item">
+      <label>Spannweite: </label>
+      <p id="range"></p>
+    </div>
+
+    <div class="item">
+      <label>Mittlere Abweichung vom Mittelwert: </label>
+      <p id="mAvM"></p>
+    </div>
+
+    <div class="item">
+      <label>Empirische Varianz: </label>
+      <p id="empirischeVarianz"></p>
+    </div>
+
+    <div class="item">
+      <label>Empirische Standardabweichung: </label>
+      <p id="empirischeStandardabweichung"></p>
+    </div>
+
+    <div id="footnotes">
+      <p id="1">[1] Der Modalwert ist nicht immer eindeutig.</p>
+      <p id="2">
+        [2] Es existiert keine allgeimmein akzeptierte Schreibweise für den
+        Median.
+      </p>
+    </div>
+  </body>
+</html>
