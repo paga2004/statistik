@@ -25,8 +25,8 @@ const formulas = {
   },
   median: {
     formulas: [
-      "D = \\text{Wert genau in der Mitte der sortierten Liste}",
-      "D = \\text{Wert genau in der Mitte der sortierten Liste}",
+      "\\tilde{x} = \\text{Wert genau in der Mitte der sortierten Liste}",
+      "\\tilde{x} = \\text{Wert genau in der Mitte der sortierten Liste}",
     ],
     computation: (l) => {
       let n = l.length;
